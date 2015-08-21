@@ -19,25 +19,25 @@ app.config(function($stateProvider, $urlRouterProvider) {
     .state('home', {
       url: '/',
       templateUrl: 'views/main.html'
-  });
-  $stateProvider
+    })
     .state('about', {
       url: '/about',
       templateUrl: 'views/about.html'
-  });
-  $stateProvider
+    })
     .state('blog', {
       url: '/blog',
       templateUrl: 'views/blog.html',
-  });
-  $stateProvider
+    })
     .state('contact', {
       url: '/contact',
       templateUrl: 'views/contact.html',
-  }); 	 	
-  $stateProvider
-    .state('blog-link', {
-      url: '/blog-detail',
-      templateUrl: 'views/blog-detail.html',
-  });       
+    }) 	 	
+    .state('blog.fazrin', {
+      url: '/fazrin',
+      templateUrl: 'views/blog-fazrin.html',
+    })
+    .state('blog.sigit', {
+      url: '/sigit',
+      templateUrl: 'views/blog-sigit.html',
+    });       
 });
