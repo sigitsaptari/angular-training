@@ -18,14 +18,20 @@ app.config(function($stateProvider, $urlRouterProvider) {
     .state('contact', {
       url: '/contact',
       templateUrl: 'views/contact.html',
-    }) 	 	
+    })
+    .state('blog.detail', {
+      url: '/detail',
+      templateUrl: 'views/blog-detail.html',
+      controller : 'SocmedCtrl'
+    })
     .state('blog.fazrin', {
       url: '/fazrin',
       templateUrl: 'views/blog-fazrin.html',
-      // controller : 
+      controller : 'BlogfazrinCtrl'
     })
     .state('blog.sigit', {
       url: '/sigit',
       templateUrl: 'views/blog-sigit.html',
+      controller : 'SocmedCtrl'
     });       
 });
