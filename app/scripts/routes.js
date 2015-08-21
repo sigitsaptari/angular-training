@@ -1,17 +1,3 @@
-'use strict';
-
-var app = angular.module('angularTrainingApp', [
-  'ngAnimate',
-  'ngAria',
-  'ngCookies',
-  'ngMessages',
-  'ngResource',	  
-  'ngSanitize',
-  'ngTouch',
-  'ui.router',
-  'angulike'
-]);  
-
 app.config(function($stateProvider, $urlRouterProvider) {
 
   $urlRouterProvider.otherwise('/');
@@ -36,6 +22,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
     .state('blog.fazrin', {
       url: '/fazrin',
       templateUrl: 'views/blog-fazrin.html',
+      // controller : 
     })
     .state('blog.sigit', {
       url: '/sigit',
