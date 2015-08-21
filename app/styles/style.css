@@ -1,0 +1,39 @@
+a:hover{
+	text-decoration:none;
+}
+
+.blog-box{
+	padding: 10px;
+	background-color: #fff;
+	box-shadow: 0 1px 6px rgba(0,0,0,.3);
+	border-radius: 2px;
+    -webkit-transition: box-shadow .3s cubic-bezier(.4,0,.2,1);
+    transition: box-shadow .3s cubic-bezier(.4,0,.2,1);
+}
+
+.blog-box:hover{
+
+}
+
+.blog-image{
+	position: relative;
+}
+
+.blog-box h2{
+	font-size: 15px;
+    text-transform: capitalize;
+    margin: 10px 0;
+}
+
+.blog-box p{
+	font-size: 14px;
+}
+
+.blog-box a.btn{
+	background: #4caf50;
+	color: #fff;
+	border: none;
+	font-size: 12px;	
+    padding: 5px 10px;
+    border-radius: 3px;
+}
