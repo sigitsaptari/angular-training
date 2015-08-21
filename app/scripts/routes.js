@@ -8,7 +8,8 @@ var app = angular.module('angularTrainingApp', [
   'ngResource',	  
   'ngSanitize',
   'ngTouch',
-  'ui.router'  
+  'ui.router',
+  'angulike'
 ]);  
 
 app.config(function($stateProvider, $urlRouterProvider) {
@@ -34,7 +35,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
     .state('contact', {
       url: '/contact',
       templateUrl: 'views/contact.html',
-  }); 	 	
+  }); 	 	    
   $stateProvider
     .state('blog-link', {
       url: '/blog-detail',

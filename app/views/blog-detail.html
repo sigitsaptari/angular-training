@@ -1,1 +1,46 @@
-asdasd
+<div class="container">
+
+    <div class="row">
+        <div class="box">
+            <div class="col-md-12">
+                <hr>
+                <h2 class="intro-text text-center"><strong>Blog</strong> Detail
+                </h2>
+                <hr>
+            </div>
+            <div class="col-md-12">
+                <p>This is a great place to introduce your company or project and describe what you do.</p>
+                <p>Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips amets.</p>                
+            </div>
+            <div class="col-md-12">
+                <img class="img-responsive img-border-left" src="images/slide-2.jpg" alt="">
+                <br/>
+            </div>
+            <div class="col-md-12">
+                <p>This is a great place to introduce your company or project and describe what you do.</p>
+                <p>Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips amets.</p>                
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-md-12" ng-controller="socmedCtrl">
+            	<p>Share This</p>
+            	<div class="socmed-wrap">            		
+            		<div>
+            			<span fb-like="myModel.Url"></span>
+            		</div>
+					<div>	            		            
+	                	<span tweet="myModel.Name" tweet-url="myModel.Url"></span>		            
+	            	</div>
+					<div>
+	                	<span google-plus="myModel.Url"></span>
+	            	</div>
+					<div>
+	                	<span pin-it="myModel.Name" pin-it-image="myModel.ImageUrl" pin-it-url="myModel.Url"></span>
+	            	</div>
+	            	<div class="clearfix"></div>
+            	</div>
+            </div>
+        </div>
+    </div>    
+
+</div>
+<!-- /.container -->
