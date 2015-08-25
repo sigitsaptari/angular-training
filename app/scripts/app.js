@@ -9,5 +9,6 @@ var app = angular.module('angularTrainingApp', [
   'ngSanitize',
   'ngTouch',
   'ui.router',
-  'angulike'
-]); 
+  'angulike',
+  'xtForm'
+  ]); 
