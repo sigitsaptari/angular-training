@@ -43,12 +43,29 @@ a:hover{
 	float: left;
 }
 
-#flipdiv {
-    width: 100%;
-    height: 100%;
-    -moz-transform: rotate(180deg);
-    -webkit-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-    transform: rotate(180deg);
+.ng-submitted input.ng-invalid, .ng-submitted select.ng-invalid, .ng-submitted textarea.ng-invalid {
+    border: 1px solid red;
+}
+
+.xt-validation-inline {
+    color: red;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.xt-validation-inline .xt-validation-item:before {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    content: "\e101";
+    margin-right: 5px;
+}
+
+input.ng-dirty.ng-valid, select.ng-dirty.ng-valid, textarea.ng-dirty.ng-valid {
+    border: 1px solid green;
 }
