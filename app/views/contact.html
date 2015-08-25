@@ -38,19 +38,17 @@
                 </h2>
                 <hr>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, vitae, distinctio, possimus repudiandae cupiditate ipsum excepturi dicta neque eaque voluptates tempora veniam esse earum sapiente optio deleniti consequuntur eos voluptatem.</p>
-                <form role="form" name="inlineForm" xt-form ng-submit="save(inlineForm)" role="form" novalidate>
+                <!-- <form name="inlineForm" xt-form ng-submit="save(inlineForm)" role="form" novalidate>
                     <div class="row">
                         <div class="form-group col-lg-4">
                             <label for="inlineUsername">Name</label>
                             <input name="username" type="text" class="form-control" id="inlineUsername" placeholder="Required field" ng-model="model.username" required>
-
                             <xt-validation-inline for="inlineUsername"></xt-validation-inline>
                         </div>
 
                         <div class="form-group col-lg-4">
                             <label for="inlineEmail">Email</label>
                             <input name="email" type="email" ng-model="model.email" class="form-control" id="inlineEmail" placeholder="Must be valid email" required>
-                            
                             <xt-validation-inline for="inlineEmail"></xt-validation-inline>
                         </div>
                         <div class="form-group col-lg-4">
@@ -59,16 +57,22 @@
                             <xt-validation-inline for="inlineNumber"></xt-validation-inline>
                         </div>
                         <div class="clearfix"></div>
-                        <!-- <div class="form-group col-lg-12">
+                        <div class="form-group col-lg-12">
                             <label>Message</label>
                             <textarea class="form-control" rows="6"></textarea>
-                        </div> -->
+                        </div>
                         <div class="form-group col-lg-12">
                             <input type="hidden" name="save" value="contact">
                             <button type="submit" class="btn btn-default">Save</button>
                         </div>
                     </div>
+                </form> -->
+
+                <form xt-form novalidate>
+                  <input name="email"  type="email" ng-model="modelVal" xt-validate required>
+                  <button type="submit">Submit</button>
                 </form>
+
             </div>
         </div>
     </div>
